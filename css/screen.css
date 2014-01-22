@@ -55,6 +55,11 @@ table {
   background-position: 0 0;
 }
 
+body {
+  font-family: Omnes, Helvetica;
+  font-size: 22px;
+}
+
 a {
   color: #800000;
 }
