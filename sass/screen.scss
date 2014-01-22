@@ -20,7 +20,7 @@
 
 body {
     font-family: Omnes, Helvetica;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 a {
@@ -58,6 +58,8 @@ a {
     width: 100%;
     height: 100%;
     background:lightblue;
+    text-align: center;
+    line-height: 28px;
     @include backface-visibility(hidden);
 }
 
@@ -68,4 +70,6 @@ a {
 .answer {
     @extend %card-side;
     @include rotateY(180deg);
+    font-weight: bold;
+    font-size: 40px;
 }
