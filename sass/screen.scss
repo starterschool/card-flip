@@ -33,6 +33,7 @@ a {
     @extend %container;
     margin-top: 100px;
     width: 250px;
+    height: 300px;
     @include perspective(1000);
 }
 
@@ -40,6 +41,8 @@ a {
     position: relative;
     @include transition(all 300ms ease);
     @include transform-style(preserve-3d);
+    @include transform-origin(50% 50%);
+    height: 100%;
 
     &:hover {
         @include rotateY(180deg);
@@ -52,8 +55,8 @@ a {
     left: 0;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background:lightblue;
     @include backface-visibility(hidden);
 }
